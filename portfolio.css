@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html, body {
+    width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+    background: white;
+}
+
+
+.container {
+    width: 100vw;
+    min-height: 100vh;
+    position: relative;
+}
+
+
+/* header image */
+.portfolio-image {
+
+    width: 100vw;
+    height: auto;
+
+    display: block;
+
+    object-fit: fill;
+
+    user-select: none;
+}
+
+
+/* invisible MAIN click area */
+/* image wrapper */
+.header {
+
+    position: relative;
+
+    width: 100vw;
+
+}
+
+/* header image */
+.portfolio-image {
+
+    width: 100%;
+
+    display: block;
+
+}
+
+/* invisible clickable MAIN button */
+.main-button {
+
+    position: absolute;
+
+    /* change these percentages */
+    left: 0%;
+    top: 74%;
+
+    width: 100%;
+    height: 26%;
+
+    z-index: 10;
+
+}
+
+
+
+/* projects */
+.works {
+
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+/* each project block */
+.work {
+
+    width: 100%;
+
+    padding: 25px 30px;
+
+    border-top: 2px solid black;
+
+    font-family: "MicrosoftHimalaya", serif;
+
+    color: black;
+
+    -webkit-text-stroke: 0px rgb(57, 57, 57);
+
+    text-align: left;
+
+}
+
+
+.work:last-child {
+
+    padding-top: 50px;
+    border-bottom: 2px solid black;
+
+}
+
+
+
+/* project titles */
+.work h2 {
+
+    font-size: clamp(35px, 16vw, 90px);
+
+    line-height: 0.9;
+
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+
+
+/* materials */
+.materials {
+
+    padding-top: 15px;
+
+    font-size: clamp(15px, 3vw, 35px);
+
+    line-height: 0.95;
+    text-align: end;
+
+}
+
+
+/* description */
+.description {
+
+    margin-top: 20px;
+
+    font-size: clamp(13px, 2.4vw, 28px);
+
+    line-height: 0.7;
+
+    text-align: end;
+
+}
+
+
+
+/* images */
+.work img {
+
+    width: 100%;
+
+    margin-top: 25px;
+
+    display: block;
+
+}
+
+.cv{
+
+    border-top:2px solid black;
+    border-bottom:2px solid black;
+
+    padding:40px 30px;
+
+    font-family:"MicrosoftHimalaya", serif;
+
+    color:black;
+
+}
+
+.cv h2{
+
+    font-size:clamp(40px,10vw,90px);
+
+    margin-bottom:20px;
+
+    line-height:.9;
+
+}
+
+.cv h3{
+
+    font-size:clamp(24px,5vw,45px);
+
+    margin-top:30px;
+    margin-bottom:10px;
+
+    line-height:.9;
+
+}
+
+.cv h4{
+
+    font-size: clamp(20px, 4vw, 36px);
+
+    margin-top: 18px;
+    margin-bottom: 8px;
+
+    font-weight: normal;
+
+}
+
+.cv ul{
+
+    list-style:none;
+
+}
+
+.cv li{
+
+    font-size:clamp(16px,2.6vw,30px);
+
+    line-height:1.15;
+
+    margin-bottom:10px;
+
+}
+
+.cv a{
+
+    color:black;
+
+    text-decoration:none;
+
+}
+
+.cv a:hover{
+
+    text-decoration:underline;
+
+}
+
+
+/* mobile */
+@media (max-width: 600px) {
+
+
+    .work {
+
+        padding: 5px;
+        border-top: 1px solid rgb(0, 0, 0);
+    }
+
+    .work:last-child {
+
+    padding-top: 20px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+
+}
+    .work h2 {
+
+        font-size: 45px;
+        text-align: justify;
+    }
+
+
+    .materials {
+        font-size: 18px;
+        text-align: justify;
+    }
+
+.description {
+    font-size: 15px;
+    margin-top: 8px;
+    text-align: justify;
+}
+
+
+    .work img {
+
+        margin-top: 15px;
+
+    }
+
+}
